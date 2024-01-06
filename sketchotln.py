@@ -5,9 +5,9 @@ set_output = "" # Specify the output file
 
 def sketchotln(frame, sigma_s=60, sigma_r=0.07):
     # Apply stylization filter for an sketch outline effect
-    outlined = cv2.stylization(frame, sigma_s=sigma_s, sigma_r=sigma_r)
+    outline = cv2.stylization(frame, sigma_s=sigma_s, sigma_r=sigma_r)
 
-    return outlined
+    return outline
 
 def process_video(input_video_path, output_video_path):
     cap = cv2.VideoCapture(input_video_path)
